@@ -8,4 +8,6 @@ images:
 - name: goserver
   newName: gabrielhenrique18/gitopsgo
   newTag: newtag
-
+- name: gostest
+  newName: DOCKER_USERNAME/gitopsgo
+  newTag: c542281021451efbc649611df4285a30ec8bd44f
