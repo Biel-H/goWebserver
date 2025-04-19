@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: gotest
+spec:
+  selector:
+    matchLabels:
+      app: gotest
+  template:
+    metadata:
+      labels:
+        app: gotest
+    spec:
+      containers:
+      - name: gotest
+        image: gotest
+        ports:
+        - containerPort: 8080
