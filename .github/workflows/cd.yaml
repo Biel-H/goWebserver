@@ -16,3 +16,27 @@ jobs:
         password: ${{ secrets.DOCKERHUB_PASSWORD}}
         repository: ${{ secrets.DOCKERHUB_USERNAME}}/gitopsgo
         tags: ${{ github.sha }}, latest
+
+    - name: Setando o kustomize
+      uses: imranismail/setup-kustomize@v1
+      with:
+        kustomize-version: "3.6.1"
+    
+    - name: Atualizando os recursos do kubernetes
+      env:
+        DOCKER_USERNAME: ${{ secrets.DOCKERHUB_USERNAME}}
+      run:  |
+        cd k8s
+        kustomize edit set image gostest=DOCKER_USERNAME/gitopsgo:$GITHUB_SHA
+
+    - name: commitando
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name  "GitHub Action"
+        git commit -am "Bump Docker version"
+
+    - name: push
+      uses: ad-m/github-push-acition@master
+      with:
+        github_token: ${{ secrets.TOKEN_GITHUB}}
+        repository: Biel-H/goWebserver
