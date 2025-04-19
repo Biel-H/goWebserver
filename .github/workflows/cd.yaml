@@ -12,7 +12,7 @@ jobs:
     - name: Buildando a imagem
       uses: docker/build-push-action@v1.1.0
       with:
-        username: ${{ secrets.DOCKER_USERNAME}}
-        password: ${{ secrets.DOCKER_PASSWORD}}
-        repository: ${{ secrets.DOCKER_USERNAME}}/gitopsgo
+        username: ${{ secrets.DOCKERHUB_USERNAME}}
+        password: ${{ secrets.DOCKERHUB_PASSWORD}}
+        repository: ${{ secrets.DOCKERHUB_USERNAME}}/gitopsgo
         tags: ${{ github.sha }}, latest
