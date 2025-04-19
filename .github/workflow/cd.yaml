@@ -1,8 +1,7 @@
 name: GitOps
 on:
   push:
-    branches:
-      - main
+    branches: [main]
 jobs:
   build:
     name: Build
@@ -16,4 +15,4 @@ jobs:
         username: ${{ secrets.DOCKER_USERNAME}}
         password: ${{ secretes.DOCKER_PASSWORD}}
         repository: ${{ secretes.DOCKER_USERNAME}}/gitopsgo
-        tags: ${{ github.sha }}, latest 
+        tags: ${{ github.sha }}, latest
