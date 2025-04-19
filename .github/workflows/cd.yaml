@@ -36,7 +36,7 @@ jobs:
         git commit -am "Bump Docker version"
 
     - name: push
-      uses: ad-m/github-push-acition@master
+      uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.TOKEN_GITHUB}}
         repository: Biel-H/goWebserver
