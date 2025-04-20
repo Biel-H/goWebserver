@@ -6,5 +6,5 @@ resources:
 
 images:
 - name: gitopsgo
-  newName: DOCKER_USERNAME/gitopsgo
-  newTag: 9862670421a6923d40db5351c5a3a52f67b1dce9
+  newName: gabrielhenrique18/gitopsgo
+  newTag: f539a5ac01deff1a7b70d46d08c090b59e93180f
