@@ -7,4 +7,4 @@ resources:
 images:
 - name: gitopsgo
   newName: DOCKER_USERNAME/gitopsgo
-  newTag: 4ed3782e073ba5f978771f8e17c7278a502a2da8
+  newTag: 9048c0c974e163a03064351c0dcb66a1860ea7ba
