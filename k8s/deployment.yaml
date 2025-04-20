@@ -1,18 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: gotest
+  name: gitopsgo
 spec:
   selector:
     matchLabels:
-      app: gotest
+      app: gitopsgo
   template:
     metadata:
       labels:
-        app: gotest
+        app: gitopsgo
     spec:
       containers:
-      - name: gotest
-        image: gotest
+      - name: gitopsgo
+        image: gitopsgo
         ports:
         - containerPort: 8080
