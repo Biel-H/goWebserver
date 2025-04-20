@@ -10,4 +10,4 @@ images:
   newTag: newtag
 - name: gostest
   newName: DOCKER_USERNAME/gitopsgo
-  newTag: c542281021451efbc649611df4285a30ec8bd44f
+  newTag: c72f0d7a535ace7fac2dcfef6fd90d599ae182fc
