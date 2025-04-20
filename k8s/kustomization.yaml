@@ -7,4 +7,4 @@ resources:
 images:
 - name: gitopsgo
   newName: gabrielhenrique18/gitopsgo
-  newTag: 4ed3782e073ba5f978771f8e17c7278a502a2da8
+  newTag: 1cb285ac829e8cc37a082a50898f2952829ad823
